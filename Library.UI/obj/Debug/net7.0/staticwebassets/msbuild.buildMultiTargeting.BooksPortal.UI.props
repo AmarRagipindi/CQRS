@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\BooksPortal.UI.props" />
+</Project>
