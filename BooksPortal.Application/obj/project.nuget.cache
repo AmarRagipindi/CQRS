@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "6TlLzlxm3TNtEEEG0eYMM8sD58iLv7Myes4B1e0kbosHB8/UDtWWPs7/4VGR9n50DxnxO3jO+HDj0mfTBHgVtg==",
+  "dgSpecHash": "g1D1naMnmYM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\amarn\\source\\repos\\Library.UI\\BooksPortal.Application\\BooksPortal.Application.csproj",
+  "projectFilePath": "C:\\Users\\Hp\\source\\repos\\CQRS\\BooksPortal.Application\\BooksPortal.Application.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\amarn\\.nuget\\packages\\mediatr\\12.0.1\\mediatr.12.0.1.nupkg.sha512",
-    "C:\\Users\\amarn\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
-    "C:\\Users\\amarn\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512"
+    "C:\\Users\\Hp\\.nuget\\packages\\mediatr\\12.4.0\\mediatr.12.4.0.nupkg.sha512",
+    "C:\\Users\\Hp\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\Hp\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
   ],
   "logs": []
 }
