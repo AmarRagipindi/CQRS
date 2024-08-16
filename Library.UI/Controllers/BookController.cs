@@ -1,21 +1,38 @@
-﻿using WonderfulLibrary.UI.Models;
-using Microsoft.AspNetCore.Http;
+﻿using AutoMapper;
+using DTO;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using WonderfulLibrary.Application.Query;
+using WonderfulLibrary.UI.Models;
 
 namespace WonderfulLibrary.UI.Controllers
 {
     public class BookController : Controller
     {
+        private readonly IMediator _mediator;
+        private readonly IMapper _mapper;
+        #region constructor
+        public BookController(IMediator mediator, IMapper mapper)
+        {
+            _mediator = mediator;
+            _mapper = mapper;
+        }
+        #endregion
+
+
+
         // GET: BookController
         public ActionResult Index()
         {
-            BookViewModel bv = new BookViewModel();
-            bv.Name = "This is";
-            bv.Rating = 1m;
-            BookViewModelValidator validationRules = new BookViewModelValidator();
-            var result = validationRules.Validate(bv);
+            var config = new MapperConfiguration(cfg => cfg.CreateMap<Book, BookViewModel>());
+            var query = _mediator.Send(new GetBooksQuery());
 
-            return View(bv);
+            var books = _mapper.Map<List<BookViewModel>>(query.Result);
+
+            //BookViewModelValidator validationRules = new BookViewModelValidator();
+            //var result = validationRules.Validate(books);
+
+            return View(books);
         }
 
         // GET: BookController/Details/5

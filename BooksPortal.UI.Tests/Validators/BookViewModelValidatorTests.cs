@@ -17,7 +17,6 @@ public class BookViewModelValidatorTests
             Code = "1234",
             Price = 900,
             Rating = 5
-
         };
 
         //Act

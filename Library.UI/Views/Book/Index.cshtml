@@ -1,12 +1,13 @@
-﻿@model WonderfulLibrary.UI.Models.BookViewModel
+﻿@model List<WonderfulLibrary.UI.Models.BookViewModel>
 
 @{
     ViewData["Title"] = "View";
 }
-
+@foreach(var item in Model)
+{
 <h1>View</h1>
 <h1>
-    @Model.Name
+    @item.Name
 </h1>
 <div>
     <h4>BookViewModel</h4>
@@ -18,3 +19,4 @@
     @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
     <a asp-action="Index">Back to List</a>
 </div>
+}
