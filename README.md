@@ -1,6 +1,9 @@
 # What will you learn in this project
 -> Fluent Validations
--> CQRS pattern
+-> Mediator pattern
+-> Automapper
+
+Unit Testing:
 -> Fluent assertions
 -> nUnit
 -> xUnit
