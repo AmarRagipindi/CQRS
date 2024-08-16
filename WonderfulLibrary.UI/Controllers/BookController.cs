@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using DTO;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using WonderfulLibrary.Application.Query;
@@ -20,18 +19,11 @@ namespace WonderfulLibrary.UI.Controllers
         #endregion
 
 
-
         // GET: BookController
         public ActionResult Index()
         {
-            var config = new MapperConfiguration(cfg => cfg.CreateMap<Book, BookViewModel>());
             var query = _mediator.Send(new GetBooksQuery());
-
             var books = _mapper.Map<List<BookViewModel>>(query.Result);
-
-            //BookViewModelValidator validationRules = new BookViewModelValidator();
-            //var result = validationRules.Validate(books);
-
             return View(books);
         }
 

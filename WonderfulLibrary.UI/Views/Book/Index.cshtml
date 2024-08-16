@@ -5,13 +5,12 @@
 }
 @foreach(var item in Model)
 {
-<h1>View</h1>
 <h1>
-    @item.Name
+   BookName: @item.Name
 </h1>
 <div>
-    <h4>BookViewModel</h4>
-    <hr />
+        <h4>@item.Author</h4>
+    <hr/>
     <dl class="row">
     </dl>
 </div>

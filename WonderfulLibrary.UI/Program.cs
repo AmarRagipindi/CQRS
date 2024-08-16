@@ -1,10 +1,18 @@
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.CodeAnalysis.FlowAnalysis;
 using System.Reflection;
+using WonderfulLibrary.Application.Query;
+using WonderfulLibrary.UI.Mapping;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
+builder.Services.AddAutoMapper(cfg =>
+{
+    cfg.AddProfile(new UIProfile());
+});
+builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(typeof(GetBooksQuery).Assembly));
 
 var app = builder.Build();
 
