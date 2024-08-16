@@ -1,4 +1,4 @@
-namespace Library.UI.Models
+namespace WonderfulLibrary.UI.Models
 {
     public class ErrorViewModel
     {

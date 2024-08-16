@@ -1,6 +1,6 @@
 using Microsoft.JSInterop;
 
-namespace BooksPortal.UI.Library
+namespace Library.UI.Library
 {
     // This class provides an example of how JavaScript functionality can be wrapped
     // in a .NET class for easy consumption. The associated JavaScript module is
@@ -16,7 +16,7 @@ namespace BooksPortal.UI.Library
         public ExampleJsInterop(IJSRuntime jsRuntime)
         {
             moduleTask = new(() => jsRuntime.InvokeAsync<IJSObjectReference>(
-                "import", "./_content/BooksPortal.UI.Library/exampleJsInterop.js").AsTask());
+                "import", "./_content/Library.UI.Library/exampleJsInterop.js").AsTask());
         }
 
         public async ValueTask<string> Prompt(string message)

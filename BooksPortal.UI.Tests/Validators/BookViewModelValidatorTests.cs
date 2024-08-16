@@ -1,8 +1,8 @@
-﻿using BooksPortal.UI.Models;
-using FluentAssertions;
+﻿using FluentAssertions;
 using FluentAssertions.Execution;
+using WonderfulLibrary.UI.Models;
 
-namespace BooksPortal.UI.Tests.Validators;
+namespace WonderfulLibrary.UI.Tests.Validators;
 
 public class BookViewModelValidatorTests
 {

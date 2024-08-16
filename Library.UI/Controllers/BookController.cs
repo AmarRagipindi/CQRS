@@ -1,8 +1,8 @@
-﻿using BooksPortal.UI.Models;
+﻿using WonderfulLibrary.UI.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BooksPortal.UI.Controllers
+namespace WonderfulLibrary.UI.Controllers
 {
     public class BookController : Controller
     {

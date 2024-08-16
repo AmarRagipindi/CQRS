@@ -1,10 +1,10 @@
-﻿using BooksPortal.UI.Models;
+﻿using WonderfulLibrary.UI.Models;
 using FluentAssertions;
 using FluentAssertions.Execution;
 using System.ComponentModel.DataAnnotations;
 using System.Reflection;
 
-namespace BooksPortal.UI.Tests.ViewModel;
+namespace WonderfulLibrary.UI.Tests.ViewModel;
 
 public class BookViewModelTests
 {

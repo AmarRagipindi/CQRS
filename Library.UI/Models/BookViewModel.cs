@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 using System.ComponentModel.DataAnnotations;
-namespace BooksPortal.UI.Models
+namespace WonderfulLibrary.UI.Models
 {
     public class BookViewModel
     {

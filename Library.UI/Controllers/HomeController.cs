@@ -1,8 +1,8 @@
-﻿using Library.UI.Models;
+﻿using WonderfulLibrary.UI.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace Library.UI.Controllers
+namespace WonderfulLibrary.UI.Controllers
 {
     public class HomeController : Controller
     {
