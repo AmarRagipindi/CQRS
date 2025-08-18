@@ -1,3 +1,4 @@
+###deployment:{63523}
 namespace WonderfulLibrary.UI.Models
 {
     public class ErrorViewModel
@@ -5,5 +6,6 @@ namespace WonderfulLibrary.UI.Models
         public string? RequestId { get; set; }
 
         public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
+        public string? ErrorMessage { get; set; }
     }
 }
