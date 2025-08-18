@@ -1,4 +1,5 @@
-﻿namespace DTO
+###deployment:{9653}
+namespace DTO
 {
     public class Book
     {
